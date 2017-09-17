@@ -6,7 +6,7 @@
 #include "OscDataElemStruct.h"
 
 
-class OscReceiverInputKey : public IOscReceiverInterface
+class OSC_API  OscReceiverInputKey : public IOscReceiverInterface
 {
 public:
     OscReceiverInputKey(const FString & address);

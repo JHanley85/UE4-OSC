@@ -10,8 +10,8 @@
 DECLARE_DYNAMIC_MULTICAST_DELEGATE_ThreeParams(FComponentOscReceivedSignature, const FName &, Address, const TArray<FOscDataElemStruct> &, Data, const FString &, SenderIp);
 
 
-UCLASS(ClassGroup=OSC, meta = (BlueprintSpawnableComponent))
-class UOscReceiverComponent : public UActorComponent
+UCLASS(ClassGroup=OSC, meta = (BlueprintSpawnableComponent),BlueprintType)
+class OSC_API UOscReceiverComponent : public UActorComponent
 {
     GENERATED_BODY()
 

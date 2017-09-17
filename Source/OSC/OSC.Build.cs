@@ -32,11 +32,17 @@ namespace UnrealBuildTool.Rules
 			PrivateIncludePaths.AddRange(
 				new string[] {
 					"OSC/Private",
-					"OSC/Private/Common",
-					"OSC/Private/Receive",
-					"OSC/Private/Send",
+                    "OSC/Private/Common",
+                    "OSC/Private/Receive",
+                    "OSC/Private/Send",
 				}
 			);
+            PublicIncludePaths.AddRange(
+                 new string[] {
+                    "Public/Common",
+                    "OSC/Public/Receive",
+                 }
+             );
 
             if (Target.Type == TargetRules.TargetType.Editor)
             {
